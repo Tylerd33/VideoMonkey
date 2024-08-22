@@ -28,8 +28,8 @@ foreach($SingleUrl in ($URL -split " ")){
     $SingleURL
     yt-dlp -x --audio-format wav $SingleURL
 }
-$URL    
-yt-dlp -x --audio-format wav $URL
+#$URL    
+#yt-dlp -x --audio-format wav $URL
 
 #Go through every File in Directory and rename the file to have random numbers in front
 $files = Get-ChildItem -File
@@ -47,6 +47,7 @@ foreach($file in $files){
         $randomNum = Get-Random -Minimum 1000 -Maximum 9999
         $newFileName = "$($randomNum)RNDA$($file.Name)"
         $newFileName = $newFileName -replace " ", "_"
+        $newFileName = $newFileName -replace "'", "_"
         $file | Rename-Item -NewName $newFileName
    }
 }
