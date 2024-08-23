@@ -22,7 +22,7 @@ else{
 #Go to direct0ry
 cd Rand_Ord_DL
 #Download Playlist in Current Directory
-$URL
+Write-Output "DownRandURL: " $URL
 
 foreach($SingleUrl in ($URL -split " ")){
     $SingleURL

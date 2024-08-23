@@ -1,7 +1,7 @@
 ﻿Write-Output "Starting .wav file merge"
 $files = Get-ChildItem  Rand_Ord_DL
 $OriginPath = Get-Location
-#Create .txt file if needed, otherwise clear file
+#Create ."C:\Users\BigMa\RadioHead\Scripts\Rand_Ord_DL\5283RNDAOlivia_Rodrigo_-_The_Making_of_'obsessed'_(Vevo_Footnotes)_[Udte0tu7IZw].wav" file if needed, otherwise clear file
 if(Test-Path -Path Wav_Merge_File_Names.txt){
     Write-Output "Wav_Merge_File_Names.txt found, clearing file..."
     Clear-Content -Path Wav_Merge_File_Names.txt
