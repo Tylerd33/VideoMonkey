@@ -33,6 +33,9 @@ else{
     }
 
     $CombinedURL = "$($InfoURL)$($MUSICURL)"
+
+    $CombinedURl = $CombinedURL.Trim()
+
     $CombinedURL
     ./DownRand -URL $CombinedURL
 }
