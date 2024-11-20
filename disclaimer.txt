@@ -1,1 +1,1 @@
-This project is a derivative of radiohead and not fully cleaned up yet, it is only meant for simple video merges and may have some carry overs from radiohead. Will likely be fixed soon
+This project is a derivative of radiohead and not fully cleaned up yet, it is only meant for simple video merges and may have some carry overs from radiohead.
